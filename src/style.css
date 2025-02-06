@@ -60,18 +60,19 @@ li {
 }
 
 li::marker {
-  color: rgb(67, 247, 121);
+  color: rgb(222, 141, 252);
   font-size: 1.5rem;
+  /* content: "⚽️"; */
 }
 
 a {
   text-decoration: none;
-  color: rgb(67, 247, 121);
+  color: rgb(224, 239, 255);
   font-weight: 400;
 }
 
 .fancy-hover {
-  @media (hover) {
+  @media (hover) and (prefers-reduced-motion: no-preference) {
     & > li {
       transform-origin: left center;
       transition: transform 1s var(--bounce), opacity 0.3s linear;
